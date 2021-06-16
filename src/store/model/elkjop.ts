@@ -315,6 +315,42 @@ export const Elkjop: Store = {
       url:
         'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/313949/rtx-3080-ftw3-10gb-750wb-bu',
     },
+    {
+      brand: 'pny',
+      model: 'dual',
+      series: '3070',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=215368&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/215368/pny-rtx-3070-8gb-dual-fan',
+    },
+    {
+      brand: 'palit',
+      model: 'jetstream',
+      series: '3070',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=266681&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/266681/geforce-rtx3070-jetstream-ocn',
+    },
+    {
+      brand: 'gainward',
+      model: 'phantom',
+      series: '3070',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=266683&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/266683/geforce-rtx-3070-phantom',
+    },
+    {
+      brand: 'asus',
+      model: 'strix oc',
+      series: '3060ti',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=255553&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/255553/asus-geforce-rtx-3060-ti-rog-strix-oc-8gb-gddr6-grafikkort',
+    },
   ],
   name: 'elkjop',
 };
