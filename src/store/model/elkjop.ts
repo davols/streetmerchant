@@ -279,6 +279,42 @@ export const Elkjop: Store = {
       url:
         'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/293922/asus-geforce-rtx-3060-tuf-12gb-graphics-card',
     },
+    {
+      brand: 'evga',
+      model: 'ftw3',
+      series: '3080',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=313949&Quantity=1&AddToCart=true',
+      url:
+        'http://www.elkjop.no/product/data/pc-komponenter/grafikkort/313949/rtx-3080-ftw3-10gb-750wb-bu',
+    },
+    {
+      brand: 'evga',
+      model: 'xc3',
+      series: '3080',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=313946&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/313946/rtx-3080-xc3-10gb-750wb-bu',
+    },
+    {
+      brand: 'evga',
+      model: 'xc3',
+      series: '3090',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=313948&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/313948/rtx-3090-xc3-24gb-850wb-bu',
+    },
+    {
+      brand: 'evga',
+      model: 'ftw3 ultra',
+      series: '3080',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=313949&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/313949/rtx-3080-ftw3-10gb-750wb-bu',
+    },
   ],
   name: 'elkjop',
 };
