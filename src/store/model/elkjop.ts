@@ -351,6 +351,24 @@ export const Elkjop: Store = {
       url:
         'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/255553/asus-geforce-rtx-3060-ti-rog-strix-oc-8gb-gddr6-grafikkort',
     },
+    {
+      brand: 'gigabyte',
+      model: 'gaming oc',
+      series: '3070',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=252796&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/252796/gigabyte-geforce-rtx-3070-gaming-oc-8g',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'gaming oc',
+      series: '3070',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=215407&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/215407/msi-geforce-rtx-3070-8gb-gaming-x-trio',
+    },
   ],
   name: 'elkjop',
 };
