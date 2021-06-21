@@ -310,7 +310,21 @@ export const NetonnetNO: Store = {
       series: '3090',
       url:
         'https://www.netonnet.no/art/datakomponenter/skjermkort/nvidia/gigabyte-geforce-rtx-3090-vision-oc-24gb/1015516.11111/',
-    },    
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5/1012886.15693',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5-digital-edition/1013477.15693',
+    },
   ],
   name: 'netonnet-no',
 };

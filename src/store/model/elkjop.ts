@@ -369,6 +369,24 @@ export const Elkjop: Store = {
       url:
         'https://www.elkjop.no/product/data/pc-komponenter/grafikkort/215407/msi-geforce-rtx-3070-8gb-gaming-x-trio',
     },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=220276&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/gaming/spillkonsoll/playstation-konsoller/220276/playstation-5-ps5',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=220280&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/gaming/spillkonsoll/playstation-konsoller/220280/playstation-5-ps5-digital-edition',
+    },
   ],
   name: 'elkjop',
 };
