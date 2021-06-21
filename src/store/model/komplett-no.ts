@@ -754,6 +754,18 @@ export const KomplettNO: Store = {
       series: '3090',
       url: 'https://www.komplett.no/product/1168126/',
     },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url: 'https://www.komplett.no/product/1111557/',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url: 'https://www.komplett.no/product/1161553/',
+    },
   ],
   name: 'komplett-no',
 };
