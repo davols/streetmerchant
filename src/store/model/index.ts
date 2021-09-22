@@ -45,6 +45,7 @@ import {BT} from './bt';
 import {CanadaComputers} from './canadacomputers';
 import {Caseking} from './caseking';
 import {Ccl} from './ccl';
+import {CdonNo} from './cdon-no';
 import {Centrecom} from './centrecom';
 import {Comet} from './comet';
 import {ComputerAlliance} from './computeralliance';
@@ -86,8 +87,10 @@ import {HarveyNormanIE} from './harveynorman-ie';
 import {Igamecomputer} from './igame';
 import {JohnLewis} from './johnlewis';
 import {Kabum} from './kabum';
+import {KjellNo} from './kjell-no';
 import {KomplettNO} from './komplett-no';
 import {LandmarkComputers} from './lmc';
+import {MaxgamingNo} from './maxgaming-no';
 import {Mediamarkt} from './mediamarkt';
 import {MediamarktAt} from './mediamarkt-at';
 import {Medimax} from './medimax';
@@ -111,6 +114,7 @@ import {NvidiaDE} from './nvidia-de';
 import {NvidiaES} from './nvidia-es';
 import {NvidiaFR} from './nvidia-fr';
 import {NvidiaGB} from './nvidia-gb';
+import {ObsNo} from './obs-no';
 import {OfficeDepot} from './officedepot';
 import {Ollo} from './ollo';
 import {Otto} from './otto';
@@ -203,6 +207,7 @@ export const storeList = new Map([
   [CanadaComputers.name, CanadaComputers],
   [Caseking.name, Caseking],
   [Ccl.name, Ccl],
+  [CdonNo.name, CdonNo],
   [Centrecom.name, Centrecom],
   [Comet.name, Comet],
   [ComputerAlliance.name, ComputerAlliance],
@@ -244,8 +249,10 @@ export const storeList = new Map([
   [Igamecomputer.name, Igamecomputer],
   [JohnLewis.name, JohnLewis],
   [Kabum.name, Kabum],
+  [KjellNo.name, KjellNo],
   [KomplettNO.name, KomplettNO],
   [LandmarkComputers.name, LandmarkComputers],
+  [MaxgamingNo.name, MaxgamingNo],
   [Mediamarkt.name, Mediamarkt],
   [MediamarktAt.name, MediamarktAt],
   [Medimax.name, Medimax],
@@ -271,6 +278,7 @@ export const storeList = new Map([
   [NvidiaES.name, NvidiaES],
   [NvidiaFR.name, NvidiaFR],
   [NvidiaGB.name, NvidiaGB],
+  [ObsNo.name, ObsNo],
   [OfficeDepot.name, OfficeDepot],
   [Ollo.name, Ollo],
   [Otto.name, Otto],

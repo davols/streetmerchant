@@ -201,13 +201,6 @@ export const NetonnetNO: Store = {
     },
     {
       brand: 'gigabyte',
-      model: 'aorus master',
-      series: '3070',
-      url:
-        'https://www.netonnet.no/art/datakomponenter/skjermkort/nvidia/gigabyte-geforce-rtx-3070-master-8gb/1016319.11111/',
-    },
-    {
-      brand: 'gigabyte',
       model: 'vision oc',
       series: '3070',
       url:
@@ -317,6 +310,13 @@ export const NetonnetNO: Store = {
       series: 'sonyps5c',
       url:
         'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5/1012886.15693',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5/1012886.15693/',
     },
     {
       brand: 'sony',
