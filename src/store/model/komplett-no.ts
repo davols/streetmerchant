@@ -766,6 +766,12 @@ export const KomplettNO: Store = {
       series: 'sonyps5de',
       url: 'https://www.komplett.no/product/1161553/',
     },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url: 'https://www.komplett.no/product/1132588/',
+    },
   ],
   name: 'komplett-no',
 };

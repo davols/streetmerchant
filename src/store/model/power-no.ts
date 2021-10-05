@@ -485,6 +485,12 @@ export const PowerNO: Store = {
       url:
         'https://www.power.no/gaming/playstation/playstation-konsoll/playstation-5/p-1077687/',
     },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url: 'https://www.power.no/gaming/xbox/xbox-konsoll/xbox-series-x-konsoll/p-1119853/',
+    },
   ],
   name: 'power-no',
 };

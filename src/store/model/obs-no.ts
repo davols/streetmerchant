@@ -4,8 +4,7 @@ export const ObsNo: Store = {
   currency: 'kr.',
   labels: {
     inStock: {
-      container:
-        '#buy-#content-container > main > div.ar.as.dw.e1 > div:nth-child(2) > div > div:nth-child(4) > section > div.b.ft.f3 > div > div.a3.m.eb.k > div:nth-child(1) > button > span',
+      container: 'button.v:nth-child(1) > span:nth-child(1)',
       text: ['Kjøp på nett'],
     },
     maxPrice: {
@@ -32,13 +31,6 @@ export const ObsNo: Store = {
       series: 'sonyps5de',
       url:
         'https://www.obs.no/elektronikk-og-underholdning/underholdning/konsoll/2085063',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 console',
-      series: 'sonyps5c',
-      url:
-        'https://www.obs.no/elektronikk-og-underholdning/underholdning/konsoll/2085071',
     },
   ],
   name: 'obs-no',

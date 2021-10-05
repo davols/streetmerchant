@@ -125,6 +125,7 @@ import {Pccg} from './pccg';
 import {PCComponentes} from './pccomponentes';
 import {PCDiga} from './pcdiga';
 import {PCKing} from './pcking';
+import {Platekompaniet} from './platekompaniet';
 import {PlayStation} from './playstation';
 import {Pny} from './pny';
 import {PowerNO} from './power-no';
@@ -289,6 +290,7 @@ export const storeList = new Map([
   [PCComponentes.name, PCComponentes],
   [PCDiga.name, PCDiga],
   [PCKing.name, PCKing],
+  [Platekompaniet.name, Platekompaniet],
   [PlayStation.name, PlayStation],
   [Pny.name, Pny],
   [PowerNO.name, PowerNO],

@@ -39,6 +39,13 @@ export const KjellNo: Store = {
       url:
         'https://www.kjell.com/no/produkter/videospill-og-gaming/playstation-5/sony-playstation-5-spillkonsol-p62770',
     },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url:
+        'https://www.kjell.com/no/produkter/videospill-og-gaming/xbox-series-xs/xbox-series-x-1-tb-spillkonsoll-p62914',
+    },
   ],
   name: 'kjell-no',
 };

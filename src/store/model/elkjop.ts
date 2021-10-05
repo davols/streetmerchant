@@ -378,6 +378,15 @@ export const Elkjop: Store = {
       url:
         'https://www.elkjop.no/product/gaming/spillkonsoll/playstation-konsoller/220280/playstation-5-ps5-digital-edition',
     },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      cartUrl:
+        'https://www.elkjop.no/INTERSHOP/web/WFS/store-elkjop-Site/no_NO/-/NOK/ViewCart-AddProductByAjax?SKU=218667&Quantity=1&AddToCart=true',
+      url:
+        'https://www.elkjop.no/product/gaming/spillkonsoll/xbox-konsoller/218667/xbox-series-x-1-tb-sort',
+    },
   ],
   name: 'elkjop',
 };

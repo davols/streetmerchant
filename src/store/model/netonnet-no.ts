@@ -325,6 +325,20 @@ export const NetonnetNO: Store = {
       url:
         'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5-digital-edition/1013477.15693',
     },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5-digital-edition/1020063.15693/',
+    },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/xbox/xbox-konsoll/microsoft-xbox-series-x/1011151.15694/',
+    },
   ],
   name: 'netonnet-no',
 };
