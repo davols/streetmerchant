@@ -4,8 +4,7 @@ export const PowerNO: Store = {
   currency: 'kr.',
   labels: {
     inStock: {
-      container:
-      '.btn-mega > span:nth-child(1)',
+      container: '.btn-mega > span:nth-child(1)',
       text: ['Legg til handlekurv'],
     },
     outOfStock: {
@@ -489,7 +488,8 @@ export const PowerNO: Store = {
       brand: 'microsoft',
       model: 'xbox series x',
       series: 'xboxsx',
-      url: 'https://www.power.no/gaming/xbox/xbox-konsoll/xbox-series-x-konsoll/p-1119853/',
+      url:
+        'https://www.power.no/gaming/xbox/xbox-konsoll/xbox-series-x-konsoll/p-1119853/',
     },
   ],
   name: 'power-no',

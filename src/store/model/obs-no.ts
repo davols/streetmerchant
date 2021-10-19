@@ -24,7 +24,13 @@ export const ObsNo: Store = {
       url:
         'https://www.obs.no/elektronikk-og-underholdning/underholdning/konsolltilbehor/2088151',
     },
-
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.obs.no/elektronikk-og-underholdning/underholdning/konsoll/2085071',
+    },
     {
       brand: 'sony',
       model: 'ps5 digital',

@@ -4,7 +4,7 @@ export const MaxgamingNo: Store = {
   currency: 'kr.',
   labels: {
     inStock: {
-      container: '#SubmitFalt > table > tbody > tr > td.Knapp_Kop.KKn1 > a',
+      container: '.Knapp_Kop > a:nth-child(1)',
       text: ['Legg i handlekurven'],
     },
     maxPrice: {

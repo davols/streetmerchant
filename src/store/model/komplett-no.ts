@@ -5,7 +5,7 @@ export const KomplettNO: Store = {
   labels: {
     inStock: {
       container:
-        '#MainContent > div.no-bs-center.maincontent-container.container.main-body.ignore-gutter-xs.product-page-boxes > div.responsive-content-wrapper > div.product-page > section > div > section > div.product-main-info__body > div.product-main-info__buy-and-more > div.buy-button-section > div > div > div.product-main-info-buy-button > div.buy-button > button',
+        '.product-main-info-buy-button > div:nth-child(1) > button:nth-child(1) > span:nth-child(2)',
       text: ['LEGG I HANDLEVOGN'],
     },
     outOfStock: {
