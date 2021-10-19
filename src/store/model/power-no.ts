@@ -5,7 +5,7 @@ export const PowerNO: Store = {
   labels: {
     inStock: {
       container:
-        '#product-intro > div.container.old-product-page.ng-star-inserted > div > div > div.col-md-7 > div > div.product-control > div.buy-area.ng-star-inserted > div.buy-area__webshop > button',
+      '.btn-mega > span:nth-child(1)',
       text: ['Legg til handlekurv'],
     },
     outOfStock: {
