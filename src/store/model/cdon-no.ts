@@ -5,7 +5,7 @@ export const CdonNo: Store = {
   labels: {
     inStock: {
       container: '#buy-btn',
-      text: ['Legg i handlekurven', 'Forhåndsbestill'],
+      text: ['Legg i handlekurv', 'Forhåndsbestill'],
     },
     maxPrice: {
       container: '#buy-area__price-wrapper > div',

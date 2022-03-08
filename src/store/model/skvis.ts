@@ -7,10 +7,6 @@ export const Skvis: Store = {
       container: '#product-form > div.form-row.row-btn-add > button > span',
       text: ['Add to cart'],
     },
-    maxPrice: {
-      container: '#product-form > div:nth-child(2) > div > div.field > div > div:nth-child(1) > span > span.lbl-price',
-      
-    },
     outOfStock: {
       container:
         '#product-form > div.form-row.row-btn-add > a',
