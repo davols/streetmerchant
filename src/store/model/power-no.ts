@@ -470,27 +470,7 @@ export const PowerNO: Store = {
       url:
         'https://www.power.no/data-og-tilbehoer/datakomponenter/grafikkort/asus-tuf-gaming-geforce-rtx-3090-24-gb-grafikkort/p-1115922/',
     },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url:
-        'https://www.power.no/gaming/playstation/playstation-konsoll/playstation-5-digital-edition/p-1101680/',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 console',
-      series: 'sonyps5c',
-      url:
-        'https://www.power.no/gaming/playstation/playstation-konsoll/playstation-5/p-1077687/',
-    },
-    {
-      brand: 'microsoft',
-      model: 'xbox series x',
-      series: 'xboxsx',
-      url:
-        'https://www.power.no/gaming/xbox/xbox-konsoll/xbox-series-x-konsoll/p-1119853/',
-    },
+  
   ],
   name: 'power-no',
 };

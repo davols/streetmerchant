@@ -320,6 +320,13 @@ export const NetonnetNO: Store = {
     },
     {
       brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.netonnet.no/art/gaming/spillogkonsoll/playstation/playstation-konsoll/sony-playstation-5/1020350.15693/',
+    },
+    {
+      brand: 'sony',
       model: 'ps5 digital',
       series: 'sonyps5de',
       url:
