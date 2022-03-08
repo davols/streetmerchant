@@ -37,6 +37,18 @@ export const CdonNo: Store = {
       series: 'sonyps5c',
       url: 'https://cdon.no/spill/playstation-5-release-2021-54876367',
     },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url: 'https://cdon.no/elektronikk/playstation-5-release-2022-p54876367',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url: 'https://cdon.no/spill/playstation-5-825-gb-headset-horizon-forbidden-west-92246078',
+    },
   ],
   name: 'cdon-no',
 };
