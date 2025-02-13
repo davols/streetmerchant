@@ -39,5 +39,5 @@ COPY --from=builder /build/build/ build/
 COPY web/ web/
 COPY package.json package.json
 
-ENTRYPOINT [ "sh", "-c", "which npm && npm run" ]
+ENTRYPOINT ["npm", "run"]
 CMD ["start:production"]
