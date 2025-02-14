@@ -4,8 +4,7 @@ export const Multicom: Store = {
   currency: 'kr.',
   labels: {
     inStock: {
-      container:
-        '.b-purchase__btn',
+      container: '.b-purchase__btn',
       text: ['LEGG I HANDLEVOGN'],
     },
     maxPrice: {

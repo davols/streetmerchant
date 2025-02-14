@@ -13,7 +13,6 @@ export const ProshopNO: Store = {
       text: ['Bestilt'],
     },
   },
-  // 
   links: [
     {
       brand: 'test:brand',

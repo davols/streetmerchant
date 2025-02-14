@@ -28,8 +28,8 @@ export const Elkjop: Store = {
       brand: 'asus',
       model: 'tuf gaming oc',
       series: '5080',
-        url: 'https://www.elkjop.no/product/gaming/pc-komponenter/grafikkort-gpu/asus-geforce-rtx-5080-rog-tuf-gaming-16gb-oc-grafikkort/883821',
-      },
+      url: 'https://www.elkjop.no/product/gaming/pc-komponenter/grafikkort-gpu/asus-geforce-rtx-5080-rog-tuf-gaming-16gb-oc-grafikkort/883821',
+    },
     {
       brand: 'evga',
       model: 'xc3',
