@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import {existsSync, readFileSync} from 'fs';
 import path from 'path';
 import {banner} from './banner';
+import util from 'util';
 
 if (process.env.npm_config_conf) {
   if (
@@ -173,9 +174,12 @@ function loadProxyList(filename: string): string[] | undefined {
     }
     // Step 2: Check if the environment specifies an EnvFILE to read proxies from
     const envFilePath = process.env.GLOBAL_PROXIES_FILE?.trim();
+    console.log('📂 envFilePath:', envFilePath); // Log the envFilePath directly
     console.log(
-      '📂 envFilePath ${envFilePath} and ${process.env.GLOBAL_PROXIES_FILE?}'
-    );
+      '📂 process.env.GLOBAL_PROXIES_FILE:',
+      process.env.GLOBAL_PROXIES_FILE
+    ); // Check the environment variable directly
+
     if (envFilePath && existsSync(envFilePath)) {
       console.log('📂 Loading proxies from EnvFILE: ${envFilePath}');
       return readFileSync(envFilePath, 'utf-8')
@@ -199,7 +203,12 @@ function loadProxyList(filename: string): string[] | undefined {
 
     // Step 3: No proxies found
     console.warn(
-      '⚠️ No proxies found in ${filename}, ${envFilePath}, or ${defaultProxyFile}'
+      util.format(
+        '⚠️ No proxies found in %s, %s, or %s',
+        filename,
+        envFilePath,
+        defaultProxyFile
+      )
     );
     return undefined;
   } catch (error) {
