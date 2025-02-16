@@ -162,40 +162,35 @@ function envOrNumberMax(
 
 function loadProxyList(filename: string): string[] | undefined {
   try {
-    // Convert filename to lowercase and check the environment variable
-    const envVarName = filename.toLowerCase() + '_proxies';
+    // Step 1: Check if the environment specifies an EnvFILE to read proxies from
+    const envFilePath = process.env.GLOBAL_PROXIES_FILE?.trim();
 
-    if (process.env[envVarName]) {
-      const envFilePath = process.env[envVarName]!.trim();
-
-      // Ensure the file exists before trying to read
-      if (existsSync(envFilePath)) {
-        return readFileSync(envFilePath, 'utf-8')
-          .trim()
-          .split('\n')
-          .map(x => x.trim())
-          .filter(Boolean);
-      } else {
-        console.warn(
-          'Warning: Proxy file "${envFilePath}" from ENV ${envVarName} does not exist.'
-        );
-        return undefined;
-      }
-    }
-
-    // Fallback to reading from filename.proxies
-    const filePath = `${filename}.proxies`;
-    if (existsSync(filePath)) {
-      return readFileSync(filePath, 'utf-8')
+    if (envFilePath && existsSync(envFilePath)) {
+      console.log(`📂 Loading proxies from EnvFILE: ${envFilePath}`);
+      return readFileSync(envFilePath, 'utf-8')
         .trim()
         .split('\n')
         .map(x => x.trim())
         .filter(Boolean);
     }
 
+    // Step 2: Fallback to `global.proxies` if the EnvFILE is not set
+    const defaultProxyFile = 'global.proxies';
+
+    if (existsSync(defaultProxyFile)) {
+      console.log(`📂 Loading proxies from default file: ${defaultProxyFile}`);
+      return readFileSync(defaultProxyFile, 'utf-8')
+        .trim()
+        .split('\n')
+        .map(x => x.trim())
+        .filter(Boolean);
+    }
+
+    // Step 3: No proxies found
+    console.warn(`⚠️ No proxies found.`);
     return undefined;
   } catch (error) {
-    console.error('Error loading Proxy file "${envFilePath}" from ENV ${envVarName} from list:' + error);
+    console.error(`❌ Error loading proxy list:`, error);
     return undefined;
   }
 }
