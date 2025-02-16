@@ -162,11 +162,22 @@ function envOrNumberMax(
 
 function loadProxyList(filename: string): string[] | undefined {
   try {
-    // Step 1: Check if the environment specifies an EnvFILE to read proxies from
+    // Step 1 check filename
+    if (filename && existsSync(filename)) {
+      console.log('📂 Loading proxies from provided file: ${filename}');
+      return readFileSync(filename, 'utf-8')
+        .trim()
+        .split('\n')
+        .map(x => x.trim())
+        .filter(Boolean);
+    }
+    // Step 2: Check if the environment specifies an EnvFILE to read proxies from
     const envFilePath = process.env.GLOBAL_PROXIES_FILE?.trim();
-
+    console.log(
+      '📂 envFilePath ${envFilePath} and ${process.env.GLOBAL_PROXIES_FILE?}'
+    );
     if (envFilePath && existsSync(envFilePath)) {
-      console.log(`📂 Loading proxies from EnvFILE: ${envFilePath}`);
+      console.log('📂 Loading proxies from EnvFILE: ${envFilePath}');
       return readFileSync(envFilePath, 'utf-8')
         .trim()
         .split('\n')
@@ -174,11 +185,11 @@ function loadProxyList(filename: string): string[] | undefined {
         .filter(Boolean);
     }
 
-    // Step 2: Fallback to `global.proxies` if the EnvFILE is not set
+    // Step 3: Fallback to `global.proxies` if the EnvFILE is not set
     const defaultProxyFile = 'global.proxies';
 
     if (existsSync(defaultProxyFile)) {
-      console.log(`📂 Loading proxies from default file: ${defaultProxyFile}`);
+      console.log('📂 Loading proxies from default file: ${defaultProxyFile}');
       return readFileSync(defaultProxyFile, 'utf-8')
         .trim()
         .split('\n')
@@ -187,10 +198,12 @@ function loadProxyList(filename: string): string[] | undefined {
     }
 
     // Step 3: No proxies found
-    console.warn(`⚠️ No proxies found.`);
+    console.warn(
+      '⚠️ No proxies found in ${filename}, ${envFilePath}, or ${defaultProxyFile}'
+    );
     return undefined;
   } catch (error) {
-    console.error(`❌ Error loading proxy list:`, error);
+    console.error('❌ Error loading proxy list:', error);
     return undefined;
   }
 }
