@@ -162,6 +162,46 @@ function envOrNumberMax(
 
 function loadProxyList(filename: string): string[] | undefined {
   try {
+    // Convert filename to lowercase and check the environment variable
+    const envVarName = filename.toLowerCase() + '_proxies';
+
+    if (process.env[envVarName]) {
+      const envFilePath = process.env[envVarName]!.trim();
+
+      // Ensure the file exists before trying to read
+      if (existsSync(envFilePath)) {
+        return readFileSync(envFilePath, 'utf-8')
+          .trim()
+          .split('\n')
+          .map(x => x.trim())
+          .filter(Boolean);
+      } else {
+        console.warn(
+          'Warning: Proxy file "${envFilePath}" from ENV ${envVarName} does not exist.'
+        );
+        return undefined;
+      }
+    }
+
+    // Fallback to reading from filename.proxies
+    const filePath = `${filename}.proxies`;
+    if (existsSync(filePath)) {
+      return readFileSync(filePath, 'utf-8')
+        .trim()
+        .split('\n')
+        .map(x => x.trim())
+        .filter(Boolean);
+    }
+
+    return undefined;
+  } catch (error) {
+    console.error('Error loading proxy list:');
+    return undefined;
+  }
+}
+/**
+function loadProxyList(filename: string): string[] | undefined {
+  try {
     return readFileSync(`${filename}.proxies`)
       .toString()
       .trim()
@@ -171,6 +211,7 @@ function loadProxyList(filename: string): string[] | undefined {
     return undefined;
   }
 }
+  */
 
 const browser = {
   isHeadless: envOrBoolean(process.env.HEADLESS),
