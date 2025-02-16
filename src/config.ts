@@ -195,7 +195,7 @@ function loadProxyList(filename: string): string[] | undefined {
 
     return undefined;
   } catch (error) {
-    console.error('Error loading proxy list:' + error);
+    console.error('Error loading Proxy file "${envFilePath}" from ENV ${envVarName} from list:' + error);
     return undefined;
   }
 }
