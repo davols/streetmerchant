@@ -579,6 +579,7 @@ const store = {
 
     if (!proxyList) {
       proxyList = loadProxyList('global');
+      console.log('Test', proxyList);
     }
 
     return {
