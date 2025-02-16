@@ -195,7 +195,7 @@ function loadProxyList(filename: string): string[] | undefined {
 
     return undefined;
   } catch (error) {
-    console.error('Error loading proxy list:');
+    console.error('Error loading proxy list:' + error);
     return undefined;
   }
 }
